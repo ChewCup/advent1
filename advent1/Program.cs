@@ -46,8 +46,12 @@ namespace advent1
 
             // ===== Day 2 =====
 
+            string[] commands = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\commands.txt");
 
-
+            foreach (var command in commands)
+            {
+                Console.WriteLine(command);
+            }
             Console.WriteLine(count);
             Console.WriteLine(count1);
             Console.ReadLine();
