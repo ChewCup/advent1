@@ -84,7 +84,7 @@ namespace advent1
             // up X decreases aim
             // forward X It increases horizontal position, It increases depth by your aim multiplied by X ( depth = aim * forward X )
 
-            int aimValue = 0, forwardX = 0, depth = 0, tempDepth = 0;
+            int aimValue = 0, forwardX = 0, depth = 0;
 
             string[] aimCommands = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\commands.txt");
 
@@ -96,7 +96,6 @@ namespace advent1
                 {
                     int forwardVal = Convert.ToInt32(aim[1]);
                     forwardX += forwardVal;
-
                     depth += aimValue * forwardVal;
                 }
 
