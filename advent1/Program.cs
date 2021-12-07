@@ -11,8 +11,10 @@ namespace advent1
     {
         static void Main(string[] args)
         {
+            // ===== Day 1 Part 1 ===== 
+
             int count = 0;
-            int count1 = 0;
+            
             string[] lines = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\Text.txt");
 
             int[] numbers = new int[lines.Length];
@@ -29,8 +31,9 @@ namespace advent1
                 }
             }
 
-            // ====================
+            // ===== Day 1 Part 2 =====
 
+            int count1 = 0;
             for (int i = 0; i < numbers.Length - 3; i++)
             {
                 int Value1 = numbers[i] + numbers[i + 1] + numbers[i + 2];
@@ -40,6 +43,10 @@ namespace advent1
                     count1++;
                 }
             }
+
+            // ===== Day 2 =====
+
+
 
             Console.WriteLine(count);
             Console.WriteLine(count1);
