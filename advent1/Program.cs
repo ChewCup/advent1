@@ -17,6 +17,7 @@ namespace advent1
             //string[] lines = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\Text.txt");
 
             //int[] numbers = new int[lines.Length];
+
             //for (int i = 0; i < lines.Length; i++)
             //{
             //    numbers[i] = Convert.ToInt32(lines[i]);
@@ -78,44 +79,51 @@ namespace advent1
             //    Console.WriteLine(sum);
             //}
 
-            // ===== Day 2 Part 2 =====
+            //// ===== Day 2 Part 2 =====
 
-            // down X increases aim
-            // up X decreases aim
-            // forward X It increases horizontal position, It increases depth by your aim multiplied by X ( depth = aim * forward X )
+            //// down X increases aim
+            //// up X decreases aim
+            //// forward X It increases horizontal position, It increases depth by your aim multiplied by X ( depth = aim * forward X )
 
-            int aimValue = 0, forwardX = 0, depth = 0;
+            //int aimValue = 0, forwardX = 0, depth = 0;
 
-            string[] aimCommands = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\commands.txt");
+            //string[] aimCommands = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\commands.txt");
 
-            for (int i = 0; i < aimCommands.Length; i++)
-            {
-                string[] aim = aimCommands[i].Split(' ');
+            //for (int i = 0; i < aimCommands.Length; i++)
+            //{
+            //    string[] aim = aimCommands[i].Split(' ');
 
-                if (aim[0] == "forward")
-                {
-                    int forwardVal = Convert.ToInt32(aim[1]);
-                    forwardX += forwardVal;
-                    depth += aimValue * forwardVal;
-                }
+            //    if (aim[0] == "forward")
+            //    {
+            //        int forwardVal = Convert.ToInt32(aim[1]);
+            //        forwardX += forwardVal;
+            //        depth += aimValue * forwardVal;
+            //    }
 
-                if (aim[0] == "down")
-                {
-                    int downVal = Convert.ToInt32(aim[1]);
-                    aimValue += downVal;
-                }
+            //    if (aim[0] == "down")
+            //    {
+            //        int downVal = Convert.ToInt32(aim[1]);
+            //        aimValue += downVal;
+            //    }
 
-                if (aim[0] == "up")
-                {
-                    int upVal = Convert.ToInt32(aim[1]);
-                    aimValue -= upVal;
-                }
-                int sum = depth * forwardX;
-                Console.WriteLine(sum);
-            }
+            //    if (aim[0] == "up")
+            //    {
+            //        int upVal = Convert.ToInt32(aim[1]);
+            //        aimValue -= upVal;
+            //    }
+            //    int sum = depth * forwardX;
+            //    Console.WriteLine(sum);
+            //}
 
-            //Console.WriteLine(count);
-            //Console.WriteLine(count1);
+            //// ===== Day 3 Part 1 =====
+
+            int power = 0, epsilon = 0, gamma = 0;
+
+            string[] binValue = File.ReadAllLines(@"C:\Users\vikke\source\repos\advent\advent1\advent1\BinNum.txt");
+
+
+            ////Console.WriteLine(count);
+            ////Console.WriteLine(count1);
             Console.ReadLine();
         }
     }
